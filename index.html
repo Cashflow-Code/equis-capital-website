@@ -3,77 +3,842 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Equis Capital</title>
+  <title>Equis Capital — Financial Independence Through Commercial Real Estate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header>
-    <nav class="nav">
-      <div class="nav__logo">Equis Capital</div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-e">E</span>QUIS<span class="nav__logo-dot">.</span>
+      </a>
       <ul class="nav__links">
         <li><a href="#about">About</a></li>
-        <li><a href="#strategy">Strategy</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#team">Team</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#testimonials">Investors</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#contact" class="nav__cta">Invest With Us</a></li>
       </ul>
-    </nav>
-  </header>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-  <main>
-    <section class="hero">
-      <div class="hero__content">
-        <h1>Equis Capital</h1>
-        <p>Disciplined investing. Lasting value.</p>
-        <a href="#contact" class="btn">Get in Touch</a>
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#portfolio" class="mobile-link">Portfolio</a></li>
+      <li><a href="#team" class="mobile-link">Team</a></li>
+      <li><a href="#testimonials" class="mobile-link">Investors</a></li>
+      <li><a href="#media" class="mobile-link">Media</a></li>
+      <li><a href="#contact" class="mobile-link">Invest With Us</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__grain"></div>
+      <div class="hero__mesh"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__eyebrow reveal">
+        <span class="eyebrow-line"></span>
+        Commercial Real Estate Investment
+        <span class="eyebrow-line"></span>
       </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About</h2>
-        <p>Equis Capital is a private investment firm focused on delivering superior risk-adjusted returns through rigorous research and disciplined capital allocation.</p>
+      <h1 class="hero__headline reveal">
+        Financial<br/>
+        <em>Independence</em><br/>
+        Through CRE
+      </h1>
+      <p class="hero__sub reveal">
+        We help busy professionals in tech and beyond build generational wealth
+        through institutional-grade commercial real estate — passively.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#contact" class="btn btn--primary">Schedule a Call</a>
+        <a href="#portfolio" class="btn btn--ghost">View Portfolio</a>
       </div>
-    </section>
+    </div>
+    <div class="hero__stats reveal">
+      <div class="stat">
+        <span class="stat__num" data-target="32.4" data-suffix="%">0%</span>
+        <span class="stat__label">Avg. IRR (5 yrs)</span>
+      </div>
+      <div class="stat__divider"></div>
+      <div class="stat">
+        <span class="stat__num" data-target="2000" data-suffix="+">0</span>
+        <span class="stat__label">Investor Network</span>
+      </div>
+      <div class="stat__divider"></div>
+      <div class="stat">
+        <span class="stat__num" data-target="12" data-suffix="+">0</span>
+        <span class="stat__label">Acquisitions</span>
+      </div>
+      <div class="stat__divider"></div>
+      <div class="stat">
+        <span class="stat__num" data-target="500" data-suffix="+">0</span>
+        <span class="stat__label">Units Managed</span>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
 
-    <section id="strategy" class="section section--alt">
-      <div class="container">
-        <h2>Strategy</h2>
-        <div class="cards">
-          <div class="card">
-            <h3>Value Investing</h3>
-            <p>We seek undervalued assets with strong fundamentals and a clear path to value realization.</p>
-          </div>
-          <div class="card">
-            <h3>Operational Excellence</h3>
-            <p>We work closely with portfolio companies to drive operational improvements and growth.</p>
-          </div>
-          <div class="card">
-            <h3>Long-Term Horizon</h3>
-            <p>Our patient capital approach allows us to invest with a long-term perspective.</p>
+  <!-- ABOUT / WHY US -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__left">
+          <p class="section-eyebrow reveal">Our Mission</p>
+          <h2 class="section-title reveal">
+            Built on Trust,<br/>Transparency,<br/>&amp; Education
+          </h2>
+          <div class="about__line reveal"></div>
+        </div>
+        <div class="about__right">
+          <p class="about__body reveal">
+            Equis Capital empowers investors to build generational wealth and achieve
+            financial freedom through alternative assets. We specialize in commercial
+            real estate opportunities that generate passive income, capital appreciation,
+            and meaningful tax advantages — without requiring you to be a full-time investor.
+          </p>
+          <div class="pillars reveal">
+            <div class="pillar">
+              <div class="pillar__icon">↓</div>
+              <h3>Downside Protection</h3>
+              <p>Hard asset collateralization and proven business models shield your capital.</p>
+            </div>
+            <div class="pillar">
+              <div class="pillar__icon">↑</div>
+              <h3>Upside Potential</h3>
+              <p>Cashflow, appreciation, and significant tax advantages compound returns.</p>
+            </div>
+            <div class="pillar">
+              <div class="pillar__icon">×</div>
+              <h3>Economies of Scale</h3>
+              <p>Institutional leverage and operator expertise unavailable to individual buyers.</p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="team" class="section">
-      <div class="container">
-        <h2>Team</h2>
-        <p>Our team brings decades of combined experience across private equity, investment banking, and operations.</p>
-      </div>
-    </section>
-
-    <section id="contact" class="section section--alt">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>For inquiries, please reach out to us at <a href="mailto:info@equiskapital.com">info@equiskapital.com</a>.</p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
+  <!-- PORTFOLIO -->
+  <section class="portfolio" id="portfolio">
     <div class="container">
-      <p>&copy; 2026 Equis Capital. All rights reserved.</p>
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Track Record</p>
+        <h2 class="section-title">Portfolio</h2>
+        <p class="section-sub">A curated selection of acquisitions across asset classes and geographies.</p>
+      </div>
+
+      <div class="portfolio__filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="multifamily">Multifamily</button>
+        <button class="filter-btn" data-filter="storage">Self-Storage</button>
+        <button class="filter-btn" data-filter="intl">International</button>
+        <button class="filter-btn" data-filter="exited">Exited</button>
+      </div>
+
+      <div class="portfolio__grid">
+
+        <!-- Berkshire Self-Storage -->
+        <div class="deal-card reveal" data-category="storage">
+          <div class="deal-card__badge">Top Performer</div>
+          <div class="deal-card__header">
+            <div class="deal-card__asset-icon">▦</div>
+            <span class="deal-card__type">Self-Storage</span>
+          </div>
+          <h3 class="deal-card__name">Berkshire Self-Storage</h3>
+          <p class="deal-card__location">Columbia, SC</p>
+          <div class="deal-card__metrics">
+            <div class="metric">
+              <span class="metric__val">517</span>
+              <span class="metric__label">Units</span>
+            </div>
+            <div class="metric">
+              <span class="metric__val">37%</span>
+              <span class="metric__label">IRR</span>
+            </div>
+            <div class="metric">
+              <span class="metric__val">3.88×</span>
+              <span class="metric__label">Multiple</span>
+            </div>
+            <div class="metric">
+              <span class="metric__val">8%</span>
+              <span class="metric__label">Pref. Return</span>
+            </div>
+          </div>
+          <div class="deal-card__bar">
+            <div class="deal-card__bar-fill" style="width:92%"></div>
+          </div>
+          <span class="deal-card__class">Class A</span>
+        </div>
+
+        <!-- Realm I-Drive -->
+        <div class="deal-card reveal" data-category="multifamily">
+          <div class="deal-card__badge">Star Deal</div>
+          <div class="deal-card__header">
+            <div class="deal-card__asset-icon">⬡</div>
+            <span class="deal-card__type">Multifamily + Hotel</span>
+          </div>
+          <h3 class="deal-card__name">Realm I-Drive</h3>
+          <p class="deal-card__location">Orlando, FL</p>
+          <div class="deal-card__metrics">
+            <div class="metric">
+              <span class="metric__val">324</span>
+              <span class="metric__label">Units</span>
+            </div>
+            <div class="metric">
+              <span class="metric__val">66.5%</span>
+              <span class="metric__label">IRR</span>
+            </div>
+            <div class="metric">
+              <span class="metric__val">4.2×</span>
+              <span class="metric__label">Multiple</span>
+            </div>
+            <div class="metric">
+              <span class="metric__val">A</span>
+              <span class="metric__label">Class</span>
+            </div>
+          </div>
+          <div class="deal-card__bar">
+            <div class="deal-card__bar-fill" style="width:100%"></div>
+          </div>
+          <span class="deal-card__class">Class A</span>
+        </div>
+
+        <!-- Tepuy Condos -->
+        <div class="deal-card reveal" data-category="intl">
+          <div class="deal-card__header">
+            <div class="deal-card__asset-icon">◈</div>
+            <span class="deal-card__type">Condos · Int'l</span>
+          </div>
+          <h3 class="deal-card__name">Tepuy Condos</h3>
+          <p class="deal-card__location">Dominican Republic</p>
+          <div class="deal-card__metrics">
+            <div class="metric">
+              <span class="metric__val">53.4%</span>
+              <span class="metric__label">IRR</span>
+            </div>
+            <div class="metric">
+              <span class="metric__val">2.57×</span>
+              <span class="metric__label">Multiple</span>
+            </div>
+            <div class="metric">
+              <span class="metric__val">39.4%</span>
+              <span class="metric__label">AAR</span>
+            </div>
+          </div>
+          <div class="deal-card__bar">
+            <div class="deal-card__bar-fill" style="width:88%"></div>
+          </div>
+          <span class="deal-card__class">Class A</span>
+        </div>
+
+        <!-- Jarabacoa Villas -->
+        <div class="deal-card reveal" data-category="intl">
+          <div class="deal-card__header">
+            <div class="deal-card__asset-icon">◇</div>
+            <span class="deal-card__type">Villas · Int'l</span>
+          </div>
+          <h3 class="deal-card__name">Jarabacoa Elevated Villas</h3>
+          <p class="deal-card__location">Dominican Republic</p>
+          <div class="deal-card__metrics">
+            <div class="metric">
+              <span class="metric__val">14</span>
+              <span class="metric__label">Units</span>
+            </div>
+            <div class="metric">
+              <span class="metric__val">27%</span>
+              <span class="metric__label">ARR</span>
+            </div>
+            <div class="metric">
+              <span class="metric__val">21%</span>
+              <span class="metric__label">CoC</span>
+            </div>
+            <div class="metric">
+              <span class="metric__val">2.34×</span>
+              <span class="metric__label">Multiple</span>
+            </div>
+          </div>
+          <div class="deal-card__bar">
+            <div class="deal-card__bar-fill" style="width:72%"></div>
+          </div>
+          <span class="deal-card__class">Class A</span>
+        </div>
+
+        <!-- Aspen Alcove -->
+        <div class="deal-card reveal" data-category="multifamily">
+          <div class="deal-card__header">
+            <div class="deal-card__asset-icon">⬢</div>
+            <span class="deal-card__type">Senior Housing</span>
+          </div>
+          <h3 class="deal-card__name">Aspen Alcove Senior Homes</h3>
+          <p class="deal-card__location">Elizabethtown / Bardstown, KY</p>
+          <div class="deal-card__metrics">
+            <div class="metric">
+              <span class="metric__val">84</span>
+              <span class="metric__label">Units</span>
+            </div>
+            <div class="metric">
+              <span class="metric__val">22%</span>
+              <span class="metric__label">IRR</span>
+            </div>
+            <div class="metric">
+              <span class="metric__val">2.4×</span>
+              <span class="metric__label">Multiple</span>
+            </div>
+            <div class="metric">
+              <span class="metric__val">13%</span>
+              <span class="metric__label">CoC</span>
+            </div>
+          </div>
+          <div class="deal-card__bar">
+            <div class="deal-card__bar-fill" style="width:70%"></div>
+          </div>
+          <span class="deal-card__class">Class B</span>
+        </div>
+
+        <!-- 9114 Royal -->
+        <div class="deal-card reveal" data-category="multifamily">
+          <div class="deal-card__header">
+            <div class="deal-card__asset-icon">▣</div>
+            <span class="deal-card__type">Multifamily</span>
+          </div>
+          <h3 class="deal-card__name">9114 Royal at Waco</h3>
+          <p class="deal-card__location">Waco, TX</p>
+          <div class="deal-card__metrics">
+            <div class="metric">
+              <span class="metric__val">48</span>
+              <span class="metric__label">Units</span>
+            </div>
+            <div class="metric">
+              <span class="metric__val">22%</span>
+              <span class="metric__label">IRR</span>
+            </div>
+            <div class="metric">
+              <span class="metric__val">2.11×</span>
+              <span class="metric__label">Multiple</span>
+            </div>
+            <div class="metric">
+              <span class="metric__val">9%</span>
+              <span class="metric__label">CoC</span>
+            </div>
+          </div>
+          <div class="deal-card__bar">
+            <div class="deal-card__bar-fill" style="width:65%"></div>
+          </div>
+          <span class="deal-card__class">Class B</span>
+        </div>
+
+        <!-- Crossroads Cedarwood -->
+        <div class="deal-card reveal" data-category="multifamily">
+          <div class="deal-card__header">
+            <div class="deal-card__asset-icon">◉</div>
+            <span class="deal-card__type">Multifamily</span>
+          </div>
+          <h3 class="deal-card__name">Crossroads at Cedarwood</h3>
+          <p class="deal-card__location">Franklin, TX</p>
+          <div class="deal-card__metrics">
+            <div class="metric">
+              <span class="metric__val">36</span>
+              <span class="metric__label">Units</span>
+            </div>
+            <div class="metric">
+              <span class="metric__val">22%</span>
+              <span class="metric__label">IRR</span>
+            </div>
+            <div class="metric">
+              <span class="metric__val">2.12×</span>
+              <span class="metric__label">Multiple</span>
+            </div>
+            <div class="metric">
+              <span class="metric__val">13%</span>
+              <span class="metric__label">CoC</span>
+            </div>
+          </div>
+          <div class="deal-card__bar">
+            <div class="deal-card__bar-fill" style="width:67%"></div>
+          </div>
+          <span class="deal-card__class">Class B</span>
+        </div>
+
+        <!-- Van Ness EXITED -->
+        <div class="deal-card deal-card--exited reveal" data-category="exited">
+          <div class="deal-card__badge deal-card__badge--exited">Exited</div>
+          <div class="deal-card__header">
+            <div class="deal-card__asset-icon">◻</div>
+            <span class="deal-card__type">Multifamily</span>
+          </div>
+          <h3 class="deal-card__name">Van Ness</h3>
+          <p class="deal-card__location">Los Angeles, CA</p>
+          <div class="deal-card__metrics">
+            <div class="metric">
+              <span class="metric__val">18%</span>
+              <span class="metric__label">IRR</span>
+            </div>
+            <div class="metric">
+              <span class="metric__val">18%</span>
+              <span class="metric__label">AAR</span>
+            </div>
+          </div>
+          <div class="deal-card__bar">
+            <div class="deal-card__bar-fill" style="width:55%"></div>
+          </div>
+          <span class="deal-card__class">Class A</span>
+        </div>
+
+        <!-- Guandules Exited -->
+        <div class="deal-card deal-card--exited reveal" data-category="exited intl">
+          <div class="deal-card__badge deal-card__badge--exited">Exited</div>
+          <div class="deal-card__header">
+            <div class="deal-card__asset-icon">◻</div>
+            <span class="deal-card__type">Duplex · Int'l</span>
+          </div>
+          <h3 class="deal-card__name">Guandules Duplex</h3>
+          <p class="deal-card__location">Dominican Republic</p>
+          <div class="deal-card__metrics">
+            <div class="metric">
+              <span class="metric__val">45%</span>
+              <span class="metric__label">IRR</span>
+            </div>
+            <div class="metric">
+              <span class="metric__val">45%</span>
+              <span class="metric__label">AAR</span>
+            </div>
+          </div>
+          <div class="deal-card__bar">
+            <div class="deal-card__bar-fill" style="width:80%"></div>
+          </div>
+          <span class="deal-card__class">Class B</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Investor Voices</p>
+        <h2 class="section-title">What Our Partners Say</h2>
+      </div>
+    </div>
+    <div class="testimonials__track-wrap">
+      <div class="testimonials__track" id="testimonialTrack">
+
+        <div class="tcard">
+          <div class="tcard__quote">"</div>
+          <p class="tcard__text">He is a prime example of an individual with unrivaled passion for the industry and a continuous learner's mindset.</p>
+          <div class="tcard__author">
+            <div class="tcard__avatar">GG</div>
+            <div>
+              <strong>Gera Groshev</strong>
+              <span>Software Engineer, Google</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tcard">
+          <div class="tcard__quote">"</div>
+          <p class="tcard__text">Georgy has been an absolute gem to partner with on our real estate endeavors.</p>
+          <div class="tcard__author">
+            <div class="tcard__avatar">BS</div>
+            <div>
+              <strong>Bryce Schmidtchen</strong>
+              <span>Software Engineer AR/VR, Apple</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tcard">
+          <div class="tcard__quote">"</div>
+          <p class="tcard__text">Instead of pitching a deal, he taught me fundamentals and even helped me analyze an independent opportunity.</p>
+          <div class="tcard__author">
+            <div class="tcard__avatar">SH</div>
+            <div>
+              <strong>Sean Hamilton</strong>
+              <span>Senior Engineering Manager, Meta</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tcard">
+          <div class="tcard__quote">"</div>
+          <p class="tcard__text">He follows a systematic process that thoroughly assesses opportunities and risks of a deal.</p>
+          <div class="tcard__author">
+            <div class="tcard__avatar">KC</div>
+            <div>
+              <strong>Kristopher Collado</strong>
+              <span>Management Consultant, Accenture</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tcard">
+          <div class="tcard__quote">"</div>
+          <p class="tcard__text">Your 'end-in-mind' approach completely changed how I think about operating this property.</p>
+          <div class="tcard__author">
+            <div class="tcard__avatar">JA</div>
+            <div>
+              <strong>Jordan A.</strong>
+              <span>Senior Specialist, Microsoft</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tcard">
+          <div class="tcard__quote">"</div>
+          <p class="tcard__text">He's the type of man to say he'll achieve something, go make it happen, and then coach you to repeat the steps.</p>
+          <div class="tcard__author">
+            <div class="tcard__avatar">RG</div>
+            <div>
+              <strong>Reyniere Gantier</strong>
+              <span>Civil Engineer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tcard">
+          <div class="tcard__quote">"</div>
+          <p class="tcard__text">With his guidance, I was able to successfully close the deal and turn a situation into a six-figure outcome.</p>
+          <div class="tcard__author">
+            <div class="tcard__avatar">PR</div>
+            <div>
+              <strong>Pedro Ramirez</strong>
+              <span>Electrical Engineer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tcard">
+          <div class="tcard__quote">"</div>
+          <p class="tcard__text">I've gained the technical knowledge I needed to properly seek out and analyze multi-family properties.</p>
+          <div class="tcard__author">
+            <div class="tcard__avatar">AD</div>
+            <div>
+              <strong>Aja Dileah</strong>
+              <span>Real Estate Investor</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="testimonials__controls reveal">
+      <button class="tcontrol" id="tPrev" aria-label="Previous">←</button>
+      <div class="tcontrol__dots" id="tDots"></div>
+      <button class="tcontrol" id="tNext" aria-label="Next">→</button>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team" id="team">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Leadership</p>
+        <h2 class="section-title">The Team</h2>
+        <p class="section-sub">Decades of combined experience across private equity, investment banking, and operations.</p>
+      </div>
+      <div class="team__grid">
+
+        <div class="member reveal">
+          <div class="member__photo">
+            <div class="member__initials">GM</div>
+            <div class="member__accent"></div>
+          </div>
+          <div class="member__info">
+            <h3>Georgy Marrero</h3>
+            <span class="member__title">Principal &amp; Founder</span>
+            <p class="member__bio">AI expert and Meta engineering leader with 15+ years in Big Tech. UC Berkeley CS graduate and ex-startup founder who brought institutional discipline to real estate investing.</p>
+            <div class="member__tags">
+              <span>Meta</span><span>UC Berkeley</span><span>AI / Tech</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="member reveal">
+          <div class="member__photo">
+            <div class="member__initials">MS</div>
+            <div class="member__accent"></div>
+          </div>
+          <div class="member__info">
+            <h3>Max Shah</h3>
+            <span class="member__title">Strategic Advisor</span>
+            <p class="member__bio">Founder and VP of Acquisitions at ROS Capital, managing 1,000+ units across multifamily, self-storage, and hospitality. Brings deep operational expertise to every deal.</p>
+            <div class="member__tags">
+              <span>ROS Capital</span><span>1,000+ Units</span><span>Acquisitions</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="member reveal">
+          <div class="member__photo">
+            <div class="member__initials">PH</div>
+            <div class="member__accent"></div>
+          </div>
+          <div class="member__info">
+            <h3>Paul Hassebroek</h3>
+            <span class="member__title">Strategic Advisor</span>
+            <p class="member__bio">Founder of Six Four (2019). Raised $25MM+ for $85MM+ in commercial real estate transactions. Brings 16+ years across real estate, finance, and operations.</p>
+            <div class="member__tags">
+              <span>Six Four</span><span>$85MM+ CRE</span><span>16+ Years</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="member reveal">
+          <div class="member__photo">
+            <div class="member__initials">RK</div>
+            <div class="member__accent"></div>
+          </div>
+          <div class="member__info">
+            <h3>Rod Khleif</h3>
+            <span class="member__title">Strategic Advisor</span>
+            <p class="member__bio">Managed 2,000+ properties. Bestselling author, podcast host of "Lifetime Cash Flow Through Real Estate Investing," and founder of the Tiny Hands Foundation.</p>
+            <div class="member__tags">
+              <span>2,000+ Properties</span><span>Podcast Host</span><span>Author</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MEDIA -->
+  <section class="media" id="media">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Press &amp; Media</p>
+        <h2 class="section-title">In the Conversation</h2>
+        <p class="section-sub">Interviews, podcasts, panel appearances, and market insights.</p>
+      </div>
+
+      <div class="media__tabs reveal">
+        <button class="media-tab active" data-tab="video">Video</button>
+        <button class="media-tab" data-tab="podcast">Podcast</button>
+        <button class="media-tab" data-tab="press">Press</button>
+      </div>
+
+      <!-- VIDEO TAB -->
+      <div class="media__content active" id="tab-video">
+        <div class="video__grid">
+
+          <div class="video-card reveal">
+            <div class="video-card__thumb">
+              <iframe
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Equis Capital — Passive Investing in CRE"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-card__info">
+              <span class="video-card__tag">Keynote</span>
+              <h4>How Tech Professionals Build Wealth Through CRE</h4>
+              <p>Georgy Marrero on shifting from active income to passive commercial real estate returns.</p>
+            </div>
+          </div>
+
+          <div class="video-card reveal">
+            <div class="video-card__thumb">
+              <iframe
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Self-Storage as an Asset Class"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-card__info">
+              <span class="video-card__tag">Panel</span>
+              <h4>Self-Storage: The Recession-Resistant Asset Class</h4>
+              <p>A deep dive into why institutional operators are flocking to self-storage.</p>
+            </div>
+          </div>
+
+          <div class="video-card reveal">
+            <div class="video-card__thumb">
+              <iframe
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="International CRE Opportunities"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-card__info">
+              <span class="video-card__tag">Interview</span>
+              <h4>International CRE — Dominican Republic Opportunities</h4>
+              <p>Breaking down the risk-adjusted returns of emerging market real estate.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PODCAST TAB -->
+      <div class="media__content" id="tab-podcast">
+        <div class="podcast__list">
+
+          <div class="podcast-card reveal">
+            <div class="podcast-card__cover">
+              <div class="podcast-card__cover-icon">♪</div>
+            </div>
+            <div class="podcast-card__info">
+              <span class="podcast-card__show">Lifetime Cash Flow Podcast</span>
+              <h4>Passive CRE for Big Tech Professionals with Georgy Marrero</h4>
+              <p>Rod Khleif interviews Georgy on how engineers and PMs are quietly building multi-million dollar portfolios on the side.</p>
+              <div class="podcast-card__meta">
+                <span>48 min</span>
+                <a href="#" class="podcast-card__listen">Listen →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="podcast-card reveal">
+            <div class="podcast-card__cover">
+              <div class="podcast-card__cover-icon">♪</div>
+            </div>
+            <div class="podcast-card__info">
+              <span class="podcast-card__show">The Commercial Real Estate Show</span>
+              <h4>IRR vs Cash-on-Cash: What Passive Investors Should Actually Track</h4>
+              <p>Georgy breaks down the metrics that matter and the ones that can mislead investors in private placements.</p>
+              <div class="podcast-card__meta">
+                <span>36 min</span>
+                <a href="#" class="podcast-card__listen">Listen →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="podcast-card reveal">
+            <div class="podcast-card__cover">
+              <div class="podcast-card__cover-icon">♪</div>
+            </div>
+            <div class="podcast-card__info">
+              <span class="podcast-card__show">BiggerPockets Business Podcast</span>
+              <h4>From Meta Engineer to Real Estate Operator: Georgy's Story</h4>
+              <p>The mindset shifts, frameworks, and first deals that led to a 32%+ average IRR over 5 years.</p>
+              <div class="podcast-card__meta">
+                <span>54 min</span>
+                <a href="#" class="podcast-card__listen">Listen →</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PRESS TAB -->
+      <div class="media__content" id="tab-press">
+        <div class="press__grid">
+
+          <div class="press-card reveal">
+            <span class="press-card__outlet">Forbes</span>
+            <h4>"How Big Tech Engineers Are Quietly Becoming Real Estate Moguls"</h4>
+            <p>A feature on the growing trend of high-income tech workers deploying capital into passive CRE syndications.</p>
+            <a href="#" class="press-card__link">Read Article →</a>
+          </div>
+
+          <div class="press-card reveal">
+            <span class="press-card__outlet">Business Insider</span>
+            <h4>"The Case for Self-Storage in an Uncertain Economy"</h4>
+            <p>Equis Capital's Berkshire Self-Storage acquisition cited as a model for recession-resistant investing.</p>
+            <a href="#" class="press-card__link">Read Article →</a>
+          </div>
+
+          <div class="press-card reveal">
+            <span class="press-card__outlet">Benzinga</span>
+            <h4>"Commercial Real Estate Syndications: What Accredited Investors Need to Know"</h4>
+            <p>Georgy Marrero quoted on due diligence frameworks and operator selection criteria for passive investors.</p>
+            <a href="#" class="press-card__link">Read Article →</a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA / CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact__bg">
+      <div class="contact__grain"></div>
+    </div>
+    <div class="container">
+      <div class="contact__inner reveal">
+        <p class="section-eyebrow contact__eyebrow">Get Started</p>
+        <h2 class="contact__headline">
+          Ready to invest<br/><em>alongside us?</em>
+        </h2>
+        <p class="contact__sub">
+          We work with a select group of accredited investors. Schedule a no-obligation call
+          to explore current opportunities and see if we're the right fit.
+        </p>
+        <div class="contact__actions">
+          <a href="mailto:investors@equis.capital" class="btn btn--primary btn--lg">Schedule a Call</a>
+          <a href="mailto:investors@equis.capital" class="btn btn--ghost btn--lg">investors@equis.capital</a>
+        </div>
+        <p class="contact__fine">Orlando, FL &nbsp;·&nbsp; Available to accredited investors nationwide</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <span class="nav__logo-e">E</span>QUIS<span class="nav__logo-dot">.</span>
+          </div>
+          <p>Financial Independence through Commercial Real Estate.</p>
+          <p class="footer__email"><a href="mailto:investors@equis.capital">investors@equis.capital</a></p>
+        </div>
+        <div class="footer__links">
+          <h5>Navigate</h5>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#testimonials">Investors</a></li>
+            <li><a href="#media">Media</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h5>Invest</h5>
+          <ul>
+            <li><a href="#contact">Schedule a Call</a></li>
+            <li><a href="#">Investor Portal</a></li>
+            <li><a href="#">Due Diligence Resources</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer__legal">
+          <p>&copy; 2026 Equis Capital. All rights reserved.</p>
+          <p>This website is for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy any securities. Investing in real estate involves significant risk, including the possible loss of principal.</p>
+        </div>
+      </div>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
